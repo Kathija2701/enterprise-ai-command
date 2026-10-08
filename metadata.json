@@ -1,0 +1,7 @@
+{
+  "name": "AI-Powered Enterprise Management Platform",
+  "description": "AI-Powered Integrated Enterprise Management and Automation Platform for employees, tasks, projects, departments, analytics, reports, notifications, and AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

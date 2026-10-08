@@ -1,0 +1,87 @@
+/* Enterprise Management Platform Stylesheet */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg-dark: #0f172a;
+  --card-dark: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --accent-emerald: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-rose: #f43f5e;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.enterprise-card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.enterprise-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.sidebar-nav {
+  width: 280px;
+  background-color: #0b1120;
+  border-right: 1px solid var(--border-color);
+  min-height: 100vh;
+}
+
+.nav-link-custom {
+  color: var(--text-muted);
+  border-radius: 0.75rem;
+  padding: 0.65rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nav-link-custom:hover, .nav-link-custom.active {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.badge-urgent {
+  background-color: rgba(244, 63, 94, 0.2);
+  color: #fda4af;
+  border: 1px solid rgba(244, 63, 94, 0.4);
+}
+
+.badge-high {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-completed {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.progress-custom {
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #334155;
+  overflow: hidden;
+}
+
+.progress-bar-custom {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  height: 100%;
+}
